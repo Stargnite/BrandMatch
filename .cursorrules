@@ -78,3 +78,32 @@ const { isEnabled } = await draftMode()
 // Handle async params in layouts/pages
 const params = await props.params
 const searchParams = await props.searchParams
+
+
+
+{
+  "language": "typescript",
+  "framework": "nextjs-app-router",
+  "ui": ["tailwind", "shadcn/ui"],
+  "database": "prisma-postgresql",
+  "auth": "clerk",
+  "payments": "schematic",
+  "state": "zustand",
+  "style": {
+    "indent": 2,
+    "quotes": "double",
+    "formatter": "prettier"
+  },
+  "naming": {
+    "variables": "camelCase",
+    "components": "PascalCase"
+  },
+  "rules": {
+    "avoid": ["any", "inline-styles", "unused-vars"],
+    "prefer": ["async-await", "type-safety", "component-reuse"]
+  },
+  "defaults": {
+    "tone": "developer-assistant",
+    "responseStyle": "concise-readable-code"
+  }
+}
