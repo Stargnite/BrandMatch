@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 export default function SignUpPage() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 px-4 py-12 dark:bg-black">
-      <Card className="w-full max-w-md">
+      {/* <Card className="w-full max-w-md">
         <CardHeader className="text-center">
           <CardTitle className="text-2xl font-semibold">
             Create Your Account
@@ -13,7 +13,7 @@ export default function SignUpPage() {
             Join BrandMatch to connect creators with brands
           </p>
         </CardHeader>
-        <CardContent>
+        <CardContent> */}
           <SignUp
             routing="path"
             path="/sign-up"
@@ -25,8 +25,8 @@ export default function SignUpPage() {
               },
             }}
           />
-        </CardContent>
-      </Card>
+        {/* </CardContent>
+      </Card> */}
     </div>
   );
 }
